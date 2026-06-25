@@ -14,7 +14,7 @@
                         sans: ['Inter', 'sans-serif'],
                     },
                     colors: {
-                        base: '#0d0d0d', /* Background */
+                        base: '#141414', /* Background */
                         surface: '#161616',/* Card */
                         line: '#222222', /* Borders */
                         muted: '#444444', /* Tertiary text, placeholders */
@@ -32,7 +32,7 @@
 <body class="bg-base text-primary font-sans antialiased">
 
     <!-- Navigation Bar -->
-    <nav class="max-w-2xl mx-auto px-6 py-5 flex items-center justify-between border-b border-line">
+    <nav class="max-w-7xl mx-auto px-6 py-5 flex items-center sticky top-0 z-50 bg-base justify-between border-b border-line">
         <a href="/index.html" class="text-sm font-medium tracking-tight">Hor.Tongan</a>
         <div class="flex gap-6 text-sm text-sub">
             <a href="projects/index.html" class="hover:text-primary transition-colors duration-150">Projects</a>
@@ -42,22 +42,22 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="max-w-2xl mx-auto px-6 pt-20 pb-16 border-b border-line">
-        <p class="text-[11px] text-muted uppercase tracking-widest mb-6">
+    <section class="max-w-7xl mx-auto px-6 pt-20 pb-16 border-b border-line">
+        <p class="text-xs text-muted uppercase tracking-widest mb-6">
             IT student - Programmer - Phnom Penh
         </p>
-        <h1 class="text-3xl font-medium leading-snug mb-5">
+        <h1 class="text-5xl font-medium leading-snug mb-5">
             Aspiring Software Developer <br> with a passion for problem solving.
         </h1>
-        <p class="text-sm text-sub leading-relaxed max-w-xs">
+        <p class="text-base text-sub leading-relaxed max-w-sm">
             I'm Tongan, a student at The University of Cambodia and ISTAD who builds things on the side to learn. Apps,
             Websites, Games, whatever seems interesting next.
         </p>
     </section>
 
     <!-- Projects Section -->
-    <section class="max-w-2xl mx-auto px-6 py-14 border-b border-line">
-        <p class="text-[11px] text-muted uppercase tracking-widest mb-8">Projects</p>
+    <section class="max-w-7xl mx-auto px-6 py-14 border-b border-line">
+        <p class="text-xs text-muted uppercase tracking-widest mb-8">Projects</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 
             <!-- Flip Decibel Card -->
@@ -65,14 +65,13 @@
                 class="group block border border-line rounded-lg overflow-hidden hover:border-muted transition-colors duration-150">
                 <div
                     class="w-full h-44 bg-surface border-b border-line overflow-hidden flex items-center justify-center">
-                    <img src="" alt="Flip Decibel screenshot"
-                        class="w-full h-full object-cover" />
+                    <img src="" alt="Flip Decibel screenshot" class="w-full h-full object-cover" />
                 </div>
                 <div class="p-4">
-                    <h2 class="text-sm font-medium mb-2 group-hover:transition-colors duration-150">
+                    <h2 class="text-base font-medium mb-2 group-hover:transition-colors duration-150">
                         Flip Decibel
                     </h2>
-                    <p class="text-xs text-sub leading-relaxed mb-3">
+                    <p class="text-sm text-sub leading-relaxed mb-3">
                         Android coin-flip app with 3D OpenGL ES rendering and a hidden volume-based rigging mechanic.
                     </p>
                     <div class="flex flex-wrap gap-1.5">
@@ -89,14 +88,13 @@
                 class="group block border border-line rounded-lg overflow-hidden hover:border-muted transition-colors duration-150">
                 <div
                     class="w-full h-44 bg-surface border-b border-line overflow-hidden flex items-center justify-center">
-                    <img src="" alt="Wordle++ screenshot"
-                        class="w-full h-full object-cover" />
+                    <img src="" alt="Wordle++ screenshot" class="w-full h-full object-cover" />
                 </div>
                 <div class="p-4">
-                    <h2 class="text-sm font-medium mb-2 group-hover:transition-colors duration-150">
+                    <h2 class="text-base font-medium mb-2 group-hover:transition-colors duration-150">
                         Wordle++
                     </h2>
-                    <p class="text-xs text-sub leading-relaxed mb-3">
+                    <p class="text-sm text-sub leading-relaxed mb-3">
                         Terminal-based Wordle clone with user accounts, leaderboards, and multiple game modes.
                     </p>
                     <div class="flex flex-wrap gap-1.5">
@@ -117,9 +115,9 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="max-w-2xl mx-auto px-6 py-14 border-b border-line">
-        <p class="text-[11px] text-muted uppercase tracking-widest mb-4">Contact</p>
-        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+    <section id="contact" class="max-w-7xl mx-auto px-6 py-14 border-b border-line">
+        <p class="text-xs text-muted uppercase tracking-widest mb-8">Contact</p>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
             <a href="https://t.me/tonganwashere" target="_blank" rel="noopener noreferrer"
                 class="flex items-center justify-between border border-line rounded-lg px-4 py-3 hover:border-muted transition-colors duration-150 group">
                 <span class="text-xs text-sub group-hover:text-primary transition-colors duration-150">Telegram</span>
@@ -145,13 +143,15 @@
                 <span class="text-xs text-sub group-hover:text-primary transition-colors duration-150">Tiktok</span>
                 <span class="text-xs text-muted">↗</span>
             </a>
-
-            <p>My phone number: 0965700151</p>
-            <p>or send me an email at tonganwashere@gmail.com</p>
+        </div>
+        <div class="flex justify-between text-sm text-sub">
+            <span>Tel: 0965700151</span>
+            <span>Email: tonganwashere@gmail.com</span>
         </div>
     </section>
 
-    <footer class="max-w-2xl mx-auto px-6 py-6">
+    <!-- Footer -->
+    <footer class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
         <p class="text-xs text-muted">© 2026 Hor Tongan</p>
         <p class="text-xs text-muted">Designed and built from scratch</p>
     </footer>
