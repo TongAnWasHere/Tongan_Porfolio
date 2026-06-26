@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flip Decibel - Hor Tongan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        base: '#141414',
+                        surface: '#161616',
+                        line: '#222222',
+                        muted: '#444444',
+                        primary: '#f0eeea',
+                        sub: '#888888',
+                    },
+                },
+            },
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+    <style>
+        .screenshot-scroll::-webkit-scrollbar {
+            display: none;
+        }
+
+        .screenshot-scroll {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+
+<body class="bg-base text-primary font-sans antialiased">
+
+    <!-- Navigation Bar -->
+    <nav
+        class="sticky top-0 z-50 bg-base max-w-7xl mx-auto px-6 py-5 flex items-center justify-between border-b border-line">
+        <a href="../index.html" class="text-sm font-medium tracking-tight">Hor.Tongan</a>
+        <div class="flex gap-6 text-sm text-sub">
+            <a href="index.html" class="hover:text-primary transition-colors duration-150">Projects</a>
+            <a href="../about.html" class="hover:text-primary transition-colors duration-150">About</a>
+            <a href="../index.html#contact" class="hover:text-primary transition-colors duration-150">Contact</a>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-6">
+        <div class="flex items-center justify-between py-8 border-b border-line">
+            <a href="index.html" class="text-sm text-sub hover:text-primary transition-colors duration-150">← All
+                projects</a>
+            <div class="flex gap-4 text-sm text-sub">
+                <a href="wordle_pp.html" class="hover:text-primary transition-colors duration-150">← Prev</a>
+                <span class="opacity-30 cursor-not-allowed">Next →</span>
+            </div>
+        </div>
+
+        <!-- Project Header -->
+        <section class="pt-14 pb-10 border-b border-line">
+            <p class="text-xs text-muted uppercase tracking-widest mb-4">Project</p>
+            <h1 class="text-4xl font-medium mb-4">Flip Decibel</h1>
+            <p class="text-base text-sub leading-relaxed max-w-xl mb-6">
+                Summary
+            </p>
+            <div class="flex flex-wrap gap-2">
+                <span class="text-xs text-muted border border-line rounded-full px-3 py-1">Java</span>
+                <span class="text-xs text-muted border border-line rounded-full px-3 py-1">Android</span>
+                <span class="text-xs text-muted border border-line rounded-full px-3 py-1">OpenGL ES 2.0</span>
+                <span class="text-xs text-muted border border-line rounded-full px-3 py-1">Play Store</span>
+            </div>
+        </section>
+
+        <!-- Screenshot Gallery -->
+        <section class="py-10 border-b border-line">
+            <div class="screenshot-scroll flex gap-4 overflow-x-auto scroll-smooth"
+                style="scroll-snap-type: x mandatory;">
+
+                <div class="flex-shrink-0 rounded-lg overflow-hidden bg-surface border border-line flex items-center justify-center"
+                    style="scroll-snap-align: start; height: 384px; min-width: 220px;">
+                    <img src="../assets/images/projects/flip-decibel-1.jpg" alt="Flip Decibel screenshot 1"
+                        class="h-full w-auto object-cover" />
+                </div>
+
+                <div class="flex-shrink-0 rounded-lg overflow-hidden bg-surface border border-line flex items-center justify-center"
+                    style="scroll-snap-align: start; height: 384px; min-width: 220px;">
+                    <img src="../assets/images/projects/flip-decibel-2.jpg" alt="Flip Decibel screenshot 2"
+                        class="h-full w-auto object-cover" />
+                </div>
+
+                <div class="flex-shrink-0 rounded-lg overflow-hidden bg-surface border border-line flex items-center justify-center"
+                    style="scroll-snap-align: start; height: 384px; min-width: 220px;">
+                    <img src="../assets/images/projects/flip-decibel-3.jpg" alt="Flip Decibel screenshot 3"
+                        class="h-full w-auto object-cover" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Details -->
+        <section class="py-10 border-b border-line grid grid-cols-1 sm:grid-cols-3 gap-10">
+            <div class="sm:col-span-2">
+                <h2 class="text-sm font-medium mb-4">About the project</h2>
+                <div class="text-sm text-sub leading-loose space-y-4">
+                    <p>Description</p>
+                    <p>Description</p>
+                    <p>Description</p>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-sm font-medium mb-4">Details</h2>
+                <div class="space-y-3 text-sm">
+                    <div class="flex justify-between">
+                        <span class="text-muted">Year</span>
+                        <span class="text-sub">2025</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-muted">Platform</span>
+                        <span class="text-sub">Android</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-muted">Status</span>
+                        <span class="text-sub">Finished</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-muted">GitHub</span>
+                        <a href="#" class="text-sub hover:text-primary transition-colors duration-150">↗ repo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom prev/next -->
+        <div class="flex items-center justify-between py-8">
+            <a href="wordle_pp.html" class="text-sm text-sub hover:text-primary transition-colors duration-150">←
+                Prev</a>
+            <span class="text-sm text-sub opacity-30 cursor-not-allowed">Next →</span>
+        </div>
+    </main>
+
+    <footer class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center border-t border-line">
+        <p class="text-xs text-muted">© 2026 Hor Tongan</p>
+        <p class="text-xs text-muted">Designed and built from scratch</p>
+    </footer>
+</body>
+
+</html>
